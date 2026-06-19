@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bg-img {
+    position: absolute;
+    z-index: -10;
+    max-width: 100%;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    filter: hue-rotate(250deg);
+    opacity: 0.4;
+    position: fixed;
+    background-image: url(/Материалы_урока/images/bg.svg);
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Nunito", sans-serif;
+}
+@keyframes nav-link {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(25deg) translate(7px,5px);
+    }
+    100% {
+        transform: rotate(0);
+    }
+
+}
+.nav-div {
+    width: 90px;
+    height: 100vh;
+    box-shadow: 0px 3px 5px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    gap: 20px;
+    position: fixed;
+}
+.nav-img {
+    width: 100%;
+}
+.planet {
+    color:#ced5fe;
+}
+.nav-link:hover {
+    background-color: #dbfbed;
+}
+.nav-link {
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-link:hover .nav-img {
+    animation-name: nav-link;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transition: 0.3s;
+}
+h1 {
+    color: #9fb8fe;
+    text-align: center;
+    width: 250px;
+    height: 50px;
+    box-shadow: 0px 3px 3px black;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    background-color: white;
+}
+.container {
+    max-width: 1800px;
+    margin-left: 100px;
+}
+.div-intro {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 200px;
+    width: 100%;
+    margin-bottom: 200px;
+}
+.intro-img {
+    height: 300px;
+    width: 50%;
+    background-image: url(/Материалы_урока/images/intro2.jpg);
+    background-repeat: no-repeat;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    object-fit: cover;
+    object-position: left ;
+}
+.text {
+    display: inline-block;
+    background-color: #e5ffe5;
+    height: 35px;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight:bold ;
+}
+.land-div {
+    display: flex;
+    justify-content: space-between;
+    
+    background-color: white;
+}
+.land-title {
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 100px;
+}
+.land-img {
+    width: 50%;
+    height: 300px;
+    object-fit: cover;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px ;
+}
+.text2 {
+    width: 800px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+.plant-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.plant-img {
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+    background-size: cover;
+    
+}
+.text-div {
+    display: flex;
+    justify-content: space-around;
+    width: 100vh;
+    height: 100%;
+}
+.plant-div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+.img0 {
+    background-image: url(/Материалы_урока/images/plant0.jpg);
+}
+.img1 {
+    background-image: url(/Материалы_урока/images/plant1.jpg);
+}
+.img2 {
+    background-image: url(/Материалы_урока/images/plant2.jpg);
+}
+.img3 {
+    background-image: url(/Материалы_урока/images/plant3.jpg);
+}
+.img4 {
+    background-image: url(/Материалы_урока/images/plant4.jpg);
+}
+.plant-text {
+    position: absolute;
+    background-color: white;
+    opacity: 0.8;
+    border-radius: 20px;
+    padding: 6px;
+    line-height: 30px;
+    text-align: center;
+}
+.text3 {
+    position: absolute;
+    bottom: -323px;
+}
+.eco-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.eco1 {
+    background-image: url(/Материалы_урока/images/internet.jpg);
+}
+.eco2 {
+    background-image: url(/Материалы_урока/images/events.jpg);
+}
+.eco3 {
+    background-image: url(/Материалы_урока/images/friends.jpg);
+}
+.eco-div {
+    display: flex;
+}
+.eco-img {
+    max-width: 600px;
+    width: 600px;
+    height: 300px;
+    object-fit: cover;
+    background-size: cover;
+}
+.eco-text {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    line-height: 300px;
+}
+.entry-title {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+.entry-div {
+    max-width: 800px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.entry-input {
+    width: 100%;
+    height: 35px;
+    margin-top: 40px;
+}
+button {
+    background-color: white;
+    border: none;
+    width: 160px;
+    height: 40px;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 20px;
+    box-shadow: 0px 2px 5px;
+}
+.fire {
+    width: 20px;
+}
